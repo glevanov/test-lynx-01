@@ -1,29 +1,20 @@
 # test-lynx-01
+Тестовое задание на реализацию сложения двух чисел.
 
-## Project setup
+## Быстрый старт
+Готовое приложение развёрнуто на GitHub Pages: https://glevanov.github.io/test-lynx-01/
+
+Для локального запуска: 
 ```
+git clone https://github.com/glevanov/test-lynx-01.git
+cd test-lynx-01
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn run serve
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Описание
+Использованы Vue и vue-cli.
+Хотя это избыточно для решения задачи, посчитал разумным использовать Vue, раз он указан в вакансии.
 
-### Run your tests
-```
-yarn run test
-```
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Одна из особенностей моего решения - создание кастомного компонента input с сохранением двустороннего связывания поля value.
