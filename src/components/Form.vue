@@ -13,7 +13,9 @@
     />
     <button
       class="form__button"
-      @click="this.alert">
+      @click="this.alert"
+      type="button"
+    >
       Сложить
     </button>
   </form>
