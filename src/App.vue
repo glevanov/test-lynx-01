@@ -8,7 +8,7 @@
 import Form from '@/components/Form.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     Form,
   },

@@ -1,20 +1,22 @@
 <template>
   <form class="form">
-    <h2 class="form__heading">Форма ввода</h2>
+    <h2 class="form__heading">
+      Форма ввода
+    </h2>
     <Input
+      v-model="firstValue"
       class="form__input"
       title="Первое число"
-      v-model="firstValue"
     />
     <Input
+      v-model="secondValue"
       class="form__input"
       title="Второе число"
-      v-model="secondValue"
     />
     <button
       class="form__button"
-      @click="this.alert"
       type="button"
+      @click="alert"
     >
       Сложить
     </button>

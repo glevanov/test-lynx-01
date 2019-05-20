@@ -1,23 +1,29 @@
 <template>
-    <label class="input">
-      {{ title }}:
-      <input
-        class="input__field"
-        type="number"
-        step="0.1"
-        :value="value"
-        @input="updateValue"
-        ref="input"
-      >
-    </label>
+  <label class="input">
+    {{ title }}:
+    <input
+      ref="input"
+      class="input__field"
+      type="number"
+      step="0.1"
+      :value="value"
+      @input="updateValue"
+    >
+  </label>
 </template>
 
 <script>
 export default {
   name: 'Input',
   props: {
-    title: String,
-    value: String,
+    title: {
+      type: String,
+      default: '',
+    },
+    value: {
+      type: String,
+      default: '',
+    },
   },
   methods: {
     updateValue() {
